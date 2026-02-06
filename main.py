@@ -911,17 +911,6 @@ async def on_startup(dp):
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)import asyncio
-import aiosqlite
-from aigram import Bot, Dispatcher, executor, types
-from aigram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
-from aigram.dispatcher import FSMContext
-from aigram.contrib.fsm_storage.memory import MemoryStorage
-from aigram.filters import Text
-import logging
-import hashlib
-import time
-from datetime import datetime
-import json
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
